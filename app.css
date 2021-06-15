@@ -1,0 +1,23 @@
+.box {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  float: left;
+  font-size: 95px;
+}
+.main_box {
+  width: 318px;
+  margin: auto;
+  padding-top: 100px;
+}
+body {
+    margin: auto;
+    width: 318px;
+    text-align: -webkit-center;
+}
+#btn_reload {
+    margin-top: 100px;
+    height: 100px;
+    width: 200px;
+    display: none;
+}

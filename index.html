@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <h1>Let's play Tic-Tac-Toe</h1>
+    <div class="main_box" id="main_box">
+        <div class="minor">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <button id="btn_reload" onClick="window.location.reload();">Refresh Page</button>
+
+    <script src="jquery.js"></script>
+    <script src="app.js"></script>
+    <script>
+        var count = 0;
+        $("h1").text("Let's play Tic Tac Toe");
+        $(".box").click(function () {
+            count = count + 1;
+            if (count % 2 == 0) {
+                $(this).text("O");
+            }
+            else {
+                $(this).text("X");
+            }
+        });
+    </script>
+</body>
+
+</html>
